@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Himanshu Dwivedi - Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+    <style>
+ @media screen and (max-width: 768px) {
+        /* Styles for screens with a maximum width of 768px */
+        /* Adjustments for smaller screens or mobile devices */
+        nav ul {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        nav ul li {
+            margin: 5px 0;
+        }
+
+        .firstsection {
+            flex-direction: column;
+            align-items: center;
+            margin: 50px 0;
+        }
+
+        .firstsection>div {
+            width: 80%;
+            text-align: center;
+        }
+
+        .rightsection img {
+            width: 100%;
+        }
+    }
+
+    @media screen and (max-width: 480px) {
+        /* Styles for screens with a maximum width of 480px */
+        /* Further adjustments for smaller screens or mobile devices */
+        .leftsection {
+            font-size: 2rem;
+        }
+
+        .leftsection .buttons {
+            padding: 30px 0;
+        }
+
+        .footer {
+            flex-direction: column;
+            align-items: center;
+            padding: 23px 20px;
+        }
+
+        .footer>div {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        .footer ul {
+            text-align: center;
+        }
+
+        footer .footer-rights {
+            padding: 12px 0;
+        }
+    }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(0, 0, 33);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(18, 18, 71);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: rgb(138, 138, 231);
+            font-size: 1.02rem;
+        }
+
+        main hr {
+            border: 0px;
+            background: #9c97f1;
+            height: 1.2px;
+            margin: 60px 84px;
+        }
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        .firstsection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 130px 0;
+        }
+
+        .firstsection>div {
+            width: 30%;
+        }
+
+        .leftsection {
+            font-size: 3rem;
+
+        }
+.leftsection .buttons{
+    padding: 50px 0;
+}
+        .leftsection .btn {
+            padding: 12px;
+            background: #1e2167;
+            color: white;
+            border: 2px solid white;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+
+        .rightsection img {
+            width: 80%;
+
+        }
+
+        .purple {
+            color: rgb(170, 107, 228);
+        }
+
+        #element {
+            color: rgb(170, 107, 228);
+        }
+
+        .secondsection {
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+        }
+
+        .secondsection h1 {
+            font-size: 1.9rem;
+        }
+
+        .secondsection .box {
+            background: white;
+            width: 77vw;
+            height: 2PX;
+            margin: 56PX 0;
+            display: flex;
+        }
+
+        .secondsection .vartical {
+            height: 93px;
+            width: 1px;
+            background-color: white;
+            margin: 0 120px;
+        }
+
+        .image-top {
+            width: 23px;
+            position: relative;
+            top: -32px;
+            left: -9px;
+        }
+
+        .vartical-title {
+            position: relative;
+            top: 75px;
+            width: 150px;
+            font-size: 14px;
+        }
+
+        .vartical-desc {
+            position: relative;
+            top: 86px;
+            color: gray;
+            width: 150px;
+            font-size: 9px;
+        }
+
+        footer {
+            background-color: #0e0e1a;
+
+
+        }
+
+        .footer {
+            display: flex;
+            padding: 23px 122px;
+            justify-content: space-evenly;
+        }
+
+        .footer ul {
+            list-style: none;
+        }
+
+        .footer>div {
+
+            width: 233px;
+        }
+
+        footer .footer-rights {
+            text-align: center;
+            color: gray;
+            padding: 12px 0;
+        }
+        #about{
+            text-align: center;
+             }
+             .left img{
+                padding-top: 15px;
+             }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left"> <img src="IMG-20230214-WA0011-removebg-preview 1.png" alt="">
+                </div>
+            <div class="right">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                   
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="about" style="background-color: #153a65ba; padding: 20px;">
+            <div style="text-align: center;">
+              <h2>About Me</h2>
+            </div>
+            <div style="text-align: center;">
+              <img src="Ellipse 1 (1).png" alt="Your Photo" style="width: 125px; border-radius: 15%;">
+            </div>
+            <p style="padding: 10px;">
+              Hi, I'm Himanshu Dwivedi, a dedicated Software Developer Trainee at Addon Shareware Pvt Ltd since March 2023.
+            </p>
+            <p style="padding: 10px;">
+              With a passion for frontend development, I possess a strong skillset in HTML, CSS, and JavaScript. I'm proficient in utilizing frameworks like Bootstrap and have experience with popular libraries such as Angular and React. Alongside my development expertise, I have a keen eye for UI/UX design, utilizing tools like Figma to create visually appealing and user-friendly interfaces. I'm also well-versed in CSS preprocessors like Sass, allowing me to streamline my stylesheets and enhance code maintainability. Furthermore, I have a solid grasp of version control using Git, enabling efficient collaboration and code management in team environments.
+            </p>
+          </section>
+          
+          
+        <hr>
+        <section class="secondsection">
+            <span class="text-grey">What I have done so for </span>
+            <h1>Work Experience</h1>
+            <div class="box">
+                <div class="vartical">
+                    <img class="image-top" src="developer.png" alt="">
+                    <div class="vartical-title">
+                        Frontend Developer (2023-Prasent)
+                    </div>
+                    <div class="vartical-desc">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia, unde? In eum aspernatur
+                        possimus velit ipsam, fugiat minima eligendi doloribus quisquam impedit? Commodi vitae rerum
+                        esse quam, natus ut velit?
+                    </div>
+                </div>
+                <div class="vartical">
+                    <img class="image-top" src="developer.png" alt="">
+                    <div class="vartical-title">
+                        Web Designer
+                    </div>
+                    <div class="vartical-desc">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia, unde? In eum aspernatur
+                        possimus velit ipsam, fugiat minima eligendi doloribus quisquam impedit? Commodi vitae rerum
+                        esse quam, natus ut velit?
+                    </div>
+                </div>
+                <div class="vartical">
+                    <img class="image-top" src="pngwing.com.png" alt="">
+                    <div class="vartical-title">
+                        HTML Developer
+                    </div>
+                    <div class="vartical-desc">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia, unde? In eum aspernatur
+                        possimus velit ipsam, fugiat minima eligendi doloribus quisquam impedit? Commodi vitae rerum
+                        esse quam, natus ut velit?
+                    </div>
+                </div>
+                <div class="vartical">
+                    <img class="image-top" src="pngwing.com (1).png" alt="">
+                    <div class="vartical-title">
+                        FIGMA Designer
+                    </div>
+                    <div class="vartical-desc">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia, unde? In eum aspernatur
+                        possimus velit ipsam, fugiat minima eligendi doloribus quisquam impedit? Commodi vitae rerum
+                        esse quam, natus ut velit?
+                    </div>
+                </div>
+                <div class="vartical">
+                    <img class="image-top" src="291716_github_logo_social network_social_icon.png" alt="">
+                    <div class="vartical-title">
+                        GIT-HUB
+                    </div>
+                    <div class="vartical-desc">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia, unde? In eum aspernatur
+                        possimus velit ipsam, fugiat minima eligendi doloribus quisquam impedit? Commodi vitae rerum
+                        esse quam, natus ut velit?
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="footer-first">
+                <h3>Himanshu's Developer Portfolio</h3>
+            </div>
+            <div class="footer-Second">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Services</li>
+                    <li>Contact</li>
+
+                </ul>
+            </div>
+            <div class="footer-Third">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Services</li>
+                    <li>Contact</li>
+
+                </ul>
+            </div>
+            <div class="footer-Fourth">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Services</li>
+                    <li>Contact</li>
+
+                </ul>
+            </div>
+        </div>
+        <div class="footer-rights">
+            copyright&#169; www.himanshuportfolio.com | all rights are reserved.
+        </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Frontend Developer', 'Web Developer', 'Web Designer.'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>
